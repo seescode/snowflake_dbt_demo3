@@ -1,5 +1,3 @@
--- models/staging/stg_claims.sql
-
 {{ config(
     materialized='view'
 ) }}

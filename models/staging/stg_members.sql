@@ -1,5 +1,3 @@
--- models/staging/stg_members.sql
-
 {{ config(
     materialized='view'
 ) }}
