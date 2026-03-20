@@ -1,7 +1,6 @@
 -- models/staging/stg_providers.sql
 
 {{ config(
-    schema='staging',
     materialized='view'
 ) }}
 
@@ -12,4 +11,4 @@ SELECT
     network_status,
     created_at::timestamp AS raw_created_at,
     updated_at::timestamp AS raw_updated_at
-FROM {{ source('raw', 'providers') }};
+FROM {{ source('raw', 'providers') }}

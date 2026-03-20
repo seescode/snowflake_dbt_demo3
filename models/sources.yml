@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DBT_DEMO3
+    schema: raw
+    tables:
+      - name: claims
+      - name: members
+      - name: providers

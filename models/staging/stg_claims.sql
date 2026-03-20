@@ -1,7 +1,6 @@
 -- models/staging/stg_claims.sql
 
 {{ config(
-    schema='staging',
     materialized='view'
 ) }}
 
@@ -16,4 +15,4 @@ SELECT
     procedure_code,
     created_at::timestamp AS raw_created_at,
     updated_at::timestamp AS raw_updated_at
-FROM {{ source('raw', 'claims') }};
+FROM {{ source('raw', 'claims') }}
