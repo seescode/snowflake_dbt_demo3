@@ -5,9 +5,11 @@
 WITH members AS (
     SELECT * FROM {{ ref('stg_members') }}
 ),
+
 providers AS (
     SELECT * FROM {{ ref('stg_providers') }}
 ),
+
 claims AS (
     SELECT * FROM {{ ref('stg_claims') }}
 )
@@ -28,6 +30,6 @@ SELECT
     p.provider_name,
     p.specialty,
     p.network_status
-FROM claims c
-LEFT JOIN members m ON c.member_id = m.member_id
-LEFT JOIN providers p ON c.provider_id = p.provider_id;
+FROM claims AS c
+LEFT JOIN members AS m ON c.member_id = m.member_id
+LEFT JOIN providers AS p ON c.provider_id = p.provider_id;
