@@ -1,0 +1,5 @@
+Plan
+-Add Data marts
+-Learn more about how to structure the schema for local development.  Does each developer get their own schema?
+-When code merges to main, it should run the dbt commands.
+-Use the optimized dbt build command so that it's not rebuilding everything.
