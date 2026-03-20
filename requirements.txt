@@ -1,0 +1,10 @@
+# dbt core + Snowflake adapter
+dbt-core==1.8.6
+dbt-snowflake==1.8.3
+
+# SQL linting
+sqlfluff==3.0.7
+sqlfluff-templater-dbt==3.0.7
+
+# Recommended supporting deps (often pulled transitively, but safer to pin)
+snowflake-connector-python==3.10.1
