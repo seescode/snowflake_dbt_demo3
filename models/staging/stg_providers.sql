@@ -1,5 +1,3 @@
--- models/staging/stg_providers.sql
-
 {{ config(
     materialized='view'
 ) }}

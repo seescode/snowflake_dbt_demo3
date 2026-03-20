@@ -1,5 +1,3 @@
--- models/staging/stg_claims.sql
-
 {{ config(
     materialized='view'
 ) }}
@@ -9,7 +7,7 @@ SELECT
     member_id,
     provider_id,
     claim_date::date AS claim_date,
-    claim_amount::number(10,2) AS claim_amount,
+    claim_amount::number(10, 2) AS claim_amount,
     claim_status,
     diagnosis_code,
     procedure_code,
