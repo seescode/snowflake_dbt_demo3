@@ -32,4 +32,4 @@ SELECT
     p.network_status
 FROM claims AS c
 LEFT JOIN members AS m ON c.member_id = m.member_id
-LEFT JOIN providers AS p ON c.provider_id = p.provider_id;
+LEFT JOIN providers AS p ON c.provider_id = p.provider_id
