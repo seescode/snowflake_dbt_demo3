@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p "$DBT_PROFILES_DIR"
           cat <<EOF > "$DBT_PROFILES_DIR/profiles.yml"
-          snowflake_dbt_demo2:
+          snowflake_dbt_demo3:
             target: ci
             outputs:
               ci:
